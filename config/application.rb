@@ -23,7 +23,7 @@ module QuizApi
 
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins 'https://secure-cove-56914.herokuapp.com'
+        origins 'https://cash-flow-quiz.herokuapp.com'
         resource '*', :headers => :any, :methods => [:get, :post, :put, :delete, :options]
       end
     end
